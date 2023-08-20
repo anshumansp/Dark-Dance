@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/contact-style.css
+
+block content 
+    .centerbox
+    .h1-text
+        h1 Contact Us
+    form#contact(action="/contact", method="POST")
+        input(name="name", type="text", placeholder="Name", class="input", required)
+        input(name="email", type="email", placeholder="Email", class="input", required)
+        select(name="gender", class="select", required)
+            option(value="" disabled selected) Gender
+            option(value="male") Male
+            option(value="female") Female
+            option(value="others") Others
+        input(name="address", type="text", placeholder="Address", class="input", required)
+        textarea(name="message", id="text", cols="30", rows="10", placeholder="Write Something", required)
+        button.btn#btn(type="submit") Submit

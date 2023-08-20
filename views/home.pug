@@ -1,0 +1,41 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSection
+        div.text-1 Welcome to the Dark Dance Academy
+        div.text-2 EAT. SLEEP. DANCE. REPEAT.
+
+    section#missionSection
+        h2 Our Mission
+        div#card-container
+            div.card
+                img(src="/static/back-1.jpg", alt="Logo")
+                h3 Perfection in Dance
+                p Making you master of your Form
+                p Choose and Excel in Your Own Style
+            div.card
+                img(src="/static/back-2.jpg", alt="Logo")
+                h3 Building Confidence
+                p Being able to Perform on Stage
+                p Making you self-confident to perform
+            div.card
+                img(src="/static/back-3.jpg", alt="Logo")
+                h3 Achieving Success
+                p Taking you to the heights of Success
+                p Providing access to Bigger Opportunities
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#brand-container
+            img(src="/static/cta-1.png", alt="")
+            img(src="/static/cta-2.png", alt="")
+            img(src="/static/cta-3.png", alt="", id="may")
+            img(src="/static/cta-4.png", alt="")
+            img(src="/static/cta-5.png", alt="")

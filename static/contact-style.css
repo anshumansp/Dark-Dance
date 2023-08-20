@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+    background-color: rgba(193, 182, 182, 0.86);
+}
+
+.centerbox {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 17vh;
+    text-align: center;
+    z-index: 10001;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgb(18, 15, 24);
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 33%;
+    height: 80vh;
+    padding: 2vw;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 14px;
+    border: 2px solid black;
+    font-family: sans-serif;
+    border-radius: 8px;
+    outline: none;
+}
+
+input,
+select {
+    height: 60px;
+}
+
+textarea::placeholder {
+    font-family: sans-serif;
+}
+
+.btn {
+    width: 100px;
+    padding: 10px 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: rgb(204, 194, 172);
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0px auto 16px auto;
+    border-radius: 6px;
+}
