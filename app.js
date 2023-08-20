@@ -7,10 +7,10 @@ const mongoose = require("mongoose");
 // const bodyparser = require("body-parser");
 
 // Connecting to Mongoose
-main().catch((err) => console.log(err));
-async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/contactDance");
-}
+// main().catch((err) => console.log(err));
+// async function main() {
+//   await mongoose.connect("mongodb://127.0.0.1:27017/contactDance");
+// }
 
 // Define Mongoose Schema
 const contactSchema = new mongoose.Schema({
@@ -41,14 +41,15 @@ app.get("/contact", (req, res) => {
 
 app.post("/contact", (req, res) => {
   var myData = new Contact(req.body);
-  myData
-    .save()
-    .then(() => {
-      res.send("This item has been saved to Database");
-    })
-    .catch(() => {
-      res.status(400).send("Item was not saved to the Database.");
-    });
+  res.status(200).send("Item has been considered.")
+  // myData
+  //   .save()
+  //   .then(() => {
+  //     res.send("This item has been saved to Database");
+  //   })
+  //   .catch(() => {
+  //     res.status(400).send("Item was not saved to the Database.");
+  //   });
 });
 
 // Running the Server
